@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Enroll in the Python for Backend course at IT School."
+  >
+
+  <title>IT School | Enrollment</title>
+</head>
+
+<body>
+  <header class="site-header">
+  <a class="site-header__logo" href="index.html">
+    IT SCHOOL
+  </a>
+
+  <nav class="site-header__nav" aria-label="Main navigation">
+    <ul class="site-header__menu">
+      <li class="site-header__menu-item">
+        <a href="index.html">Home</a>
+      </li>
+
+      <li class="site-header__menu-item">
+        <a href="courses.html">Courses</a>
+      </li>
+    </ul>
+  </nav>
+
+  <a class="site-header__enroll" href="enrollment.html">
+    Enroll now
+  </a>
+</header>
+
+  <main>
+    <section
+      class="enrollment-hero"
+      aria-labelledby="enrollment-title"
+    >
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+
+          <li>
+            <a href="course-details.html">
+              Python for Backend
+            </a>
+          </li>
+
+          <li aria-current="page">
+            Enrollment
+          </li>
+        </ol>
+      </nav>
+
+      <h1 id="enrollment-title">
+        Enroll in the course
+      </h1>
+
+      <p>
+        Fill in your details and choose how to pay.
+        You will get a confirmation by email.
+      </p>
+    </section>
+
+    <section
+      class="enrollment"
+      aria-labelledby="enrollment-form-title"
+    >
+      <h2 id="enrollment-form-title">
+        Enrollment details
+      </h2>
+
+      <form
+        class="enrollment-form"
+        method="post"
+      >
+        <fieldset class="personal-details">
+          <legend>
+            Personal details
+          </legend>
+
+          <div class="form-field">
+            <label for="full-name">
+              Full name
+            </label>
+
+            <input
+              id="full-name"
+              name="fullName"
+              type="text"
+              autocomplete="name"
+              placeholder="Input"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="email">
+              Email
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Input"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="phone">
+              Phone
+            </label>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              placeholder="Input"
+              required
+            >
+          </div>
+
+          <div class="form-field">
+            <label for="experience-level">
+              Experience level
+            </label>
+
+            <select
+              id="experience-level"
+              name="experienceLevel"
+              required
+            >
+              <option value="">
+                Select your level
+              </option>
+
+              <option value="beginner">
+                Beginner
+              </option>
+
+              <option value="intermediate">
+                Intermediate
+              </option>
+
+              <option value="advanced">
+                Advanced
+              </option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset class="payment">
+          <legend>
+            Payment
+          </legend>
+
+          <p>
+            Payment plan
+          </p>
+
+          <label class="payment-option">
+            <input
+              type="radio"
+              name="paymentPlan"
+              value="full"
+              checked
+            >
+
+            <span>
+              <strong>Pay in full</strong>
+              <span>$120 today</span>
+            </span>
+          </label>
+
+          <label class="payment-option">
+            <input
+              type="radio"
+              name="paymentPlan"
+              value="installments"
+            >
+
+            <span>
+              <strong>3 installments</strong>
+              <span>3 × $40, total $120</span>
+            </span>
+          </label>
+        </fieldset>
+
+        <div class="enrollment-form__confirmation">
+          <label>
+            <input
+              type="checkbox"
+              name="termsAccepted"
+              required
+            >
+
+            I agree to the terms and the refund policy.
+          </label>
+
+          <button type="submit">
+            Confirm enrollment
+          </button>
+
+          <p>
+            Full refund within 7 days if the course is
+            not right for you.
+          </p>
+        </div>
+      </form>
+
+      <aside
+        class="order-summary"
+        aria-labelledby="order-summary-title"
+      >
+        <p>
+          Order summary
+        </p>
+
+        <h2 id="order-summary-title">
+          Python for Backend
+        </h2>
+
+        <p>
+          Taught by Maksym Bodnar
+        </p>
+
+        <dl class="order-summary__details">
+          <div>
+            <dt>Start date</dt>
+
+            <dd>
+              <time datetime="2026-11-03">
+                November 3, 2026
+              </time>
+            </dd>
+          </div>
+
+          <div>
+            <dt>Duration</dt>
+            <dd>6 weeks</dd>
+          </div>
+
+          <div>
+            <dt>Format</dt>
+            <dd>Online</dd>
+          </div>
+
+          <div>
+            <dt>Seats left</dt>
+            <dd>8</dd>
+          </div>
+        </dl>
+
+        <ul class="order-summary__benefits">
+          <li>
+            Certificate of completion
+          </li>
+
+          <li>
+            Code review on every project
+          </li>
+
+          <li>
+            12 months of access to materials
+          </li>
+
+          <li>
+            7-day refund
+          </li>
+        </ul>
+
+        <dl class="order-summary__price">
+          <div>
+            <dt>Due today</dt>
+            <dd>$120</dd>
+          </div>
+        </dl>
+
+        <p>
+          One payment, access starts on the start date.
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="site-footer__brand">
+    <p class="site-footer__logo">
+      IT SCHOOL
+    </p>
+
+    <p>
+      Practical IT courses for building
+      real-world skills and growing your career.
+    </p>
+  </div>
+
+  <nav
+    class="site-footer__nav"
+    aria-label="Footer navigation"
+  >
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="courses.html">Courses</a>
+      </li>
+
+      <li>
+        <a href="enrollment.html">Enrollment</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="site-footer__social">
+    <p>Find us</p>
+
+    <ul>
+      <li>
+        <a href="mailto:info@itschool.example">
+          Email
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          Facebook
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener"
+        >
+          LinkedIn
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="https://telegram.org/"
+          target="_blank"
+          rel="noopener"
+        >
+          Telegram
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

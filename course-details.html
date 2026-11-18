@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Python for Backend course details, curriculum, instructor and student reviews."
+  >
+
+  <title>IT School | Python for Backend</title>
+</head>
+
+<body>
+  <%- include("src/partials/header.ejs") %>
+
+  <main>
+    <article
+      class="course-details"
+      itemscope
+      itemtype="https://schema.org/Course"
+    >
+      <header class="course-details__header">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="courses.html">Courses</a>
+            </li>
+            <li aria-current="page">
+              Python for Backend
+            </li>
+          </ol>
+        </nav>
+
+        <h1 itemprop="name">Python for Backend</h1>
+
+        <p itemprop="description">
+          Build and deploy a real REST API with Django and PostgreSQL.
+        </p>
+
+        <p>
+          Rating: 4.9 out of 5 (3 reviews)
+        </p>
+
+        <div class="course-details__instructor">
+          <p>Maksym Bodnar</p>
+        </div>
+
+        <dl class="course-details__meta">
+          <div>
+            <dt>Level</dt>
+            <dd>Beginner</dd>
+          </div>
+
+          <div>
+            <dt>Duration</dt>
+            <dd>6 weeks</dd>
+          </div>
+
+          <div>
+            <dt>Format</dt>
+            <dd>Online</dd>
+          </div>
+
+          <div>
+            <dt>Language</dt>
+            <dd>English</dd>
+          </div>
+        </dl>
+      </header>
+
+      <aside
+        class="course-enrollment-card"
+        aria-labelledby="course-price-title"
+      >
+        <h2 id="course-price-title">
+          $120
+        </h2>
+
+        <a href="enrollment.html">
+          Enroll now
+        </a>
+
+        <p>
+          8 seats left in this group
+        </p>
+
+        <ul>
+          <li>Certificate of completion</li>
+          <li>Code review on every project</li>
+          <li>12 months of access to materials</li>
+          <li>7-day refund</li>
+        </ul>
+
+        <dl>
+          <div>
+            <dt>Next start</dt>
+            <dd>
+              <time datetime="2026-11-03">
+                November 3, 2026
+              </time>
+            </dd>
+          </div>
+        </dl>
+      </aside>
+
+      <section
+        class="course-learning"
+        aria-labelledby="course-learning-title"
+      >
+        <h2 id="course-learning-title">
+          What you will learn
+        </h2>
+
+        <ul>
+          <li>
+            Design and build a REST API with Django REST Framework
+          </li>
+          <li>
+            Add authentication, permissions and validation
+          </li>
+          <li>
+            Containerize the app with Docker
+          </li>
+          <li>
+            Model data and write efficient queries in PostgreSQL
+          </li>
+          <li>
+            Write automated tests for your endpoints
+          </li>
+          <li>
+            Deploy it and set up a basic CI pipeline
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="course-audience"
+        aria-labelledby="course-audience-title"
+      >
+        <h2 id="course-audience-title">
+          Who this course is for
+        </h2>
+
+        <section aria-labelledby="good-fit-title">
+          <h3 id="good-fit-title">
+            Good fit if you
+          </h3>
+
+          <ul>
+            <li>
+              Know Python basics and want to move into backend work
+            </li>
+            <li>
+              Are a frontend developer adding server-side skills
+            </li>
+            <li>
+              Want a portfolio project for job applications
+            </li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="before-start-title">
+          <h3 id="before-start-title">
+            Before you start
+          </h3>
+
+          <ul>
+            <li>
+              Variables, functions and loops in Python
+            </li>
+            <li>
+              Basic command line and Git
+            </li>
+            <li>
+              A laptop with Python 3.11 or newer
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <section
+        class="course-program"
+        aria-labelledby="course-program-title"
+      >
+        <h2 id="course-program-title">
+          Course program
+        </h2>
+
+        <p>
+          5 modules, 42 lessons, about 56 hours with practice.
+        </p>
+
+        <details open>
+          <summary>
+            Module 1. Python and Django basics
+          </summary>
+
+          <p>
+            8 lessons (10 hours)
+          </p>
+
+          <ul>
+            <li>Project structure, settings and routing</li>
+            <li>Models, migrations and the admin</li>
+            <li>Views, templates and forms</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>
+            Module 2. Databases and queries
+          </summary>
+
+          <p>
+            8 lessons (11 hours)
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Module 3. Building the REST API
+          </summary>
+
+          <p>
+            9 lessons (12 hours)
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Module 4. Testing and quality
+          </summary>
+
+          <p>
+            8 lessons (10 hours)
+          </p>
+        </details>
+
+        <details>
+          <summary>
+            Module 5. Deployment and final project
+          </summary>
+
+          <p>
+            9 lessons (13 hours)
+          </p>
+        </details>
+      </section>
+
+      <section
+        class="course-instructor"
+        aria-labelledby="course-instructor-title"
+      >
+        <h2 id="course-instructor-title">
+          Your instructor
+        </h2>
+
+        <article class="instructor-card">
+          <h3>
+            Maksym Bodnar
+          </h3>
+
+          <p>
+            Senior backend engineer, 9 years of experience
+          </p>
+
+          <p>
+            Builds payment and logistics services in Python.
+            Has mentored more than 300 students into their first
+            backend role and reviews every final project personally.
+          </p>
+        </article>
+      </section>
+
+      <section
+        class="student-reviews"
+        aria-labelledby="student-reviews-title"
+      >
+        <h2 id="student-reviews-title">
+          Student reviews
+        </h2>
+
+        <div class="student-reviews__list">
+          <article class="review-card">
+            <header>
+              <h3>Iryna P.</h3>
+
+              <time datetime="2026-09">
+                September 2026
+              </time>
+            </header>
+
+            <p>
+              Rating: 4 out of 5 ★★★★
+            </p>
+
+            <blockquote>
+              <p>
+                Code review was the best part. I rewrote my serializers
+                twice and finally understood why.
+              </p>
+            </blockquote>
+          </article>
+
+          <article class="review-card">
+            <header>
+              <h3>Dmytro K.</h3>
+
+              <time datetime="2026-08">
+                August 2026
+              </time>
+            </header>
+
+            <p>
+              Rating: 5 out of 5 ★★★★★
+            </p>
+
+            <blockquote>
+              <p>
+                Got my first backend interview with the final project
+                in my portfolio.
+              </p>
+            </blockquote>
+          </article>
+
+          <article class="review-card">
+            <header>
+              <h3>Sofia L.</h3>
+
+              <time datetime="2026-09">
+                September 2026
+              </time>
+            </header>
+
+            <p>
+              Rating: 5 out of 5 ★★★★★
+            </p>
+
+            <blockquote>
+              <p>
+                Great structure. The deployment module could use more
+                time, but the mentor helped after class.
+              </p>
+            </blockquote>
+          </article>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  
+  <%- include("src/partials/footer.ejs") %>
+</body>
+</html>

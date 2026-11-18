@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Browse practical IT courses by category, level, duration and price."
+  >
+
+  <title>IT School | Courses</title>
+</head>
+
+<body>
+  <%- include("src/partials/header.ejs") %>
+
+  <main>
+    <section class="courses-hero" aria-labelledby="courses-title">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li aria-current="page">
+            Courses
+          </li>
+        </ol>
+      </nav>
+
+      <h1 id="courses-title">
+        All courses
+      </h1>
+
+      <p>
+        Compare level, duration and price, then open a course
+        to see the full program.
+      </p>
+    </section>
+
+    <section
+      class="courses-catalog"
+      aria-labelledby="courses-catalog-title"
+    >
+      <h2 id="courses-catalog-title">
+        Course catalog
+      </h2>
+
+      <aside class="filters" aria-labelledby="filters-title">
+        <h3 id="filters-title">
+          Filters
+        </h3>
+
+        <form class="filters__form">
+          <fieldset>
+            <legend>Category</legend>
+
+            <label>
+              <input
+                type="checkbox"
+                name="category"
+                value="qa"
+              >
+              QA
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="category"
+                value="devops"
+              >
+              DevOps
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="category"
+                value="frontend"
+              >
+              Frontend
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="category"
+                value="backend"
+              >
+              Backend
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="category"
+                value="data-science"
+              >
+              Data Science
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="category"
+                value="software-development"
+              >
+              Software development
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Level</legend>
+
+            <label>
+              <input
+                type="checkbox"
+                name="level"
+                value="beginner"
+              >
+              Beginner
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="level"
+                value="intermediate"
+              >
+              Intermediate
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="level"
+                value="advanced"
+              >
+              Advanced
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Duration</legend>
+
+            <label>
+              <input
+                type="radio"
+                name="duration"
+                value="1-4"
+              >
+              1-4 weeks
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="duration"
+                value="5-plus"
+              >
+              5 weeks or more
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="duration"
+                value="any"
+                checked
+              >
+              Any duration
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Price</legend>
+
+            <label>
+              <input
+                type="radio"
+                name="price"
+                value="any"
+                checked
+              >
+              Any price
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="price"
+                value="free"
+              >
+              Free
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="price"
+                value="paid"
+              >
+              Paid
+            </label>
+          </fieldset>
+
+          <button type="reset">
+            Clear filters
+          </button>
+        </form>
+      </aside>
+
+      <div class="courses-list">
+        <p class="courses-list__count">
+          6 courses
+        </p>
+
+        <div class="courses-list__grid">
+          <article class="course-card">
+            <p class="course-card__category">
+              DevOps
+            </p>
+
+            <h3>
+              Introduction to Networking
+            </h3>
+
+            <p>
+              Master networking basics: IP, DNS,
+              routing and troubleshooting.
+            </p>
+
+            <dl class="course-card__details">
+              <div>
+                <dt>Level</dt>
+                <dd>Beginner</dd>
+              </div>
+
+              <div>
+                <dt>Duration</dt>
+                <dd>6 weeks</dd>
+              </div>
+
+              <div>
+                <dt>Price</dt>
+                <dd>$120</dd>
+              </div>
+            </dl>
+
+            <a href="course-details.html">
+              See details
+            </a>
+          </article>
+
+          <article class="course-card">
+            <p class="course-card__category">
+              Backend
+            </p>
+
+            <h3>
+              Python for Backend
+            </h3>
+
+            <p>
+              Build and deploy a real REST API with
+              Django and PostgreSQL.
+            </p>
+
+            <dl class="course-card__details">
+              <div>
+                <dt>Level</dt>
+                <dd>Beginner</dd>
+              </div>
+
+              <div>
+                <dt>Duration</dt>
+                <dd>6 weeks</dd>
+              </div>
+
+              <div>
+                <dt>Price</dt>
+                <dd>$120</dd>
+              </div>
+            </dl>
+
+            <a href="course-details.html">
+              See details
+            </a>
+          </article>
+
+          <article class="course-card">
+            <p class="course-card__category">
+              Frontend
+            </p>
+
+            <h3>
+              React &amp; TypeScript Essentials
+            </h3>
+
+            <p>
+              Create modern interfaces with React,
+              TypeScript and reusable components.
+            </p>
+
+            <dl class="course-card__details">
+              <div>
+                <dt>Level</dt>
+                <dd>Beginner</dd>
+              </div>
+
+              <div>
+                <dt>Duration</dt>
+                <dd>7 weeks</dd>
+              </div>
+
+              <div>
+                <dt>Price</dt>
+                <dd>$135</dd>
+              </div>
+            </dl>
+
+            <a href="course-details.html">
+              See details
+            </a>
+          </article>
+
+          <article class="course-card">
+            <p class="course-card__category">
+              Data Science
+            </p>
+
+            <h3>
+              Python for Data Analysis
+            </h3>
+
+            <p>
+              Analyze datasets using Python, Pandas
+              and data visualization tools.
+            </p>
+
+            <dl class="course-card__details">
+              <div>
+                <dt>Level</dt>
+                <dd>Beginner</dd>
+              </div>
+
+              <div>
+                <dt>Duration</dt>
+                <dd>6 weeks</dd>
+              </div>
+
+              <div>
+                <dt>Price</dt>
+                <dd>$125</dd>
+              </div>
+            </dl>
+
+            <a href="course-details.html">
+              See details
+            </a>
+          </article>
+
+          <article class="course-card">
+            <p class="course-card__category">
+              QA
+            </p>
+
+            <h3>
+              Software Testing
+            </h3>
+
+            <p>
+              Learn test design, bug reporting and
+              essential manual QA techniques.
+            </p>
+
+            <dl class="course-card__details">
+              <div>
+                <dt>Level</dt>
+                <dd>Beginner</dd>
+              </div>
+
+              <div>
+                <dt>Duration</dt>
+                <dd>5 weeks</dd>
+              </div>
+
+              <div>
+                <dt>Price</dt>
+                <dd>$95</dd>
+              </div>
+            </dl>
+
+            <a href="course-details.html">
+              See details
+            </a>
+          </article>
+
+          <article class="course-card">
+            <p class="course-card__category">
+              DevOps
+            </p>
+
+            <h3>
+              Docker &amp; CI/CD Foundations
+            </h3>
+
+            <p>
+              Containerize applications and
+              automate delivery with CI/CD pipeline.
+            </p>
+
+            <dl class="course-card__details">
+              <div>
+                <dt>Level</dt>
+                <dd>Advanced</dd>
+              </div>
+
+              <div>
+                <dt>Duration</dt>
+                <dd>8 weeks</dd>
+              </div>
+
+              <div>
+                <dt>Price</dt>
+                <dd>$160</dd>
+              </div>
+            </dl>
+
+            <a href="course-details.html">
+              See details
+            </a>
+          </article>
+        </div>
+
+        <nav
+          class="pagination"
+          aria-label="Courses pagination"
+        >
+          <ol>
+            <li>
+              <a href="courses.html" aria-current="page">
+                1
+              </a>
+            </li>
+
+            <li>
+              <a href="courses.html">
+                2
+              </a>
+            </li>
+
+            <li>
+              <a href="courses.html">
+                3
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <%- include("src/partials/footer.ejs") %>
+</body>
+</html>

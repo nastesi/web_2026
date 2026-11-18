@@ -1,23 +1,357 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Labs Starter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Practical IT courses in development, data, design and more."
+  >
+
+  <title>IT School | Home</title>
 </head>
+
 <body>
-  <header class="u-header">
-    <nav class="u-nav">
-      <a href="#" class="u-logo">MySite</a>
-      <ul class="u-menu">
-        <li><a href="#/home">Home</a></li>
-        <li><a href="#/list">List</a></li>
-        <li><a href="#/about">About</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main id="app"></main>
-  <footer class="u-footer">© 2025</footer>
-  <script type="module" src="/src/js/main.js"></script>
+  <%- include("src/partials/header.ejs") %>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h1 id="hero-title">
+          Find the Right IT Course for Your Goals
+        </h1>
+
+        <p>
+          Explore practical IT courses in development, data, design and more.
+          Compare skills, levels and duration in one place.
+        </p>
+
+        <a class="hero__link" href="courses.html">
+          Browse courses
+        </a>
+      </div>
+
+      <picture class="hero__media">
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            src/assets/images/hero-mobile-360.webp 360w,
+            src/assets/images/hero-mobile-720.webp 720w
+          "
+          sizes="100vw"
+          type="image/webp"
+        >
+
+        <source
+          srcset="
+            src/assets/images/hero-desktop-1440.webp 1440w,
+            src/assets/images/hero-desktop-2880.webp 2880w
+          "
+          sizes="100vw"
+          type="image/webp"
+        >
+
+        <img
+          src="src/assets/images/hero-desktop-1440.webp"
+          width="1440"
+          height="720"
+          alt="Student studying an IT course on a laptop"
+        >
+      </picture>
+    </section>
+
+    <section
+      class="popular-courses"
+      aria-labelledby="popular-courses-title"
+    >
+      <p class="popular-courses__eyebrow">
+        What we are teaching
+      </p>
+
+      <h2 id="popular-courses-title">
+        Popular courses
+      </h2>
+
+      <div class="popular-courses__filters">
+
+        <button type="button">DevOps</button>
+        <button type="button">Backend</button>
+        <button type="button">Frontend</button>
+        <button type="button">Data Science</button>
+        <button type="button">QA</button>
+        <button type="button">All categories</button>
+      </div>
+
+      <div class="popular-courses__list">
+        <article class="course-card">
+          <p class="course-card__category">DevOps</p>
+
+          <h3>Introduction to Networking</h3>
+
+          <p>
+            Master networking basics: IP, DNS,
+            routing and troubleshooting.
+          </p>
+
+          <dl class="course-card__details">
+            <div>
+              <dt>Level</dt>
+              <dd>Beginner</dd>
+            </div>
+
+            <div>
+              <dt>Duration</dt>
+              <dd>6 weeks</dd>
+            </div>
+
+            <div>
+              <dt>Price</dt>
+              <dd>$120</dd>
+            </div>
+          </dl>
+
+          <a href="course-details.html">
+            See details
+          </a>
+        </article>
+
+        <article class="course-card">
+          <p class="course-card__category">Backend</p>
+
+          <h3>Python for Backend</h3>
+
+          <p>
+            Build and deploy a real REST API with
+            Django and PostgreSQL.
+          </p>
+
+          <dl class="course-card__details">
+            <div>
+              <dt>Level</dt>
+              <dd>Beginner</dd>
+            </div>
+
+            <div>
+              <dt>Duration</dt>
+              <dd>6 weeks</dd>
+            </div>
+
+            <div>
+              <dt>Price</dt>
+              <dd>$120</dd>
+            </div>
+          </dl>
+
+          <a href="course-details.html">
+            See details
+          </a>
+        </article>
+
+        <article class="course-card">
+          <p class="course-card__category">Frontend</p>
+
+          <h3>React &amp; TypeScript Essentials</h3>
+
+          <p>
+            Create modern interfaces with React,
+            TypeScript and reusable components.
+          </p>
+
+          <dl class="course-card__details">
+            <div>
+              <dt>Level</dt>
+              <dd>Intermediate</dd>
+            </div>
+
+            <div>
+              <dt>Duration</dt>
+              <dd>7 weeks</dd>
+            </div>
+
+            <div>
+              <dt>Price</dt>
+              <dd>$135</dd>
+            </div>
+          </dl>
+
+          <a href="course-details.html">
+            See details
+          </a>
+        </article>
+      </div>
+
+      <a class="popular-courses__more-link" href="courses.html">
+        See more courses
+      </a>
+    </section>
+
+    <section
+      class="core-principles"
+      aria-labelledby="core-principles-title"
+    >
+      <p class="core-principles__eyebrow">
+        Why learn with us
+      </p>
+
+      <h2 id="core-principles-title">
+        Our core principles
+      </h2>
+
+      <div class="core-principles__list">
+        <article class="principle-card">
+          <h3>Expert instructors</h3>
+
+          <p>
+            Every course is taught by working engineers
+            who review your code and answer questions.
+          </p>
+        </article>
+
+        <article class="principle-card">
+          <h3>Flexible learning</h3>
+
+          <p>
+            Study at your own pace. Lessons stay available,
+            and live sessions are recorded.
+          </p>
+        </article>
+
+        <article class="principle-card">
+          <h3>Practical skills</h3>
+
+          <p>
+            Each course ends with a project you can add
+            to your portfolio.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section
+      class="testimonials"
+      aria-labelledby="testimonials-title"
+    >
+      <p class="testimonials__eyebrow">
+        Testimonials
+      </p>
+
+      <h2 id="testimonials-title">
+        Hear what our students say about us
+      </h2>
+
+      <div class="testimonials__list">
+        <article class="testimonial-card">
+          <header class="testimonial-card__header">
+            <h3>Polina Tereshchenko</h3>
+            <p>Junior Software Developer</p>
+          </header>
+
+          <blockquote>
+            <p>
+              Without exaggeration, this is the best IT school.
+              It offers a solid knowledge base and a clear learning
+              path — you gradually grow as a specialist, and you can
+              really feel that progress. I’d especially like to
+              highlight the employment support: you get answers to
+              your questions, they’ll listen to you vent about going
+              a week without a job offer, and they even provide
+              practical advice on how to actually land one.
+            </p>
+          </blockquote>
+        </article>
+
+        <article class="testimonial-card">
+          <header class="testimonial-card__header">
+            <h3>Pavlo Kulyk</h3>
+            <p>Data Analyst</p>
+          </header>
+
+          <blockquote>
+            <p>
+              I studied to become a Data Analyst on a full-time basis
+              for three months. It was an invaluable experience that
+              gave me the momentum to move forward and confidence in
+              my knowledge, while also helping me realize that I
+              wasn’t alone in my fears. The course material is
+              excellent, and there is great support from mentors and
+              AI tools that assist with learning.
+            </p>
+          </blockquote>
+        </article>
+
+        <article class="testimonial-card">
+          <header class="testimonial-card__header">
+            <h3>Anna Maltseva</h3>
+            <p>Middle QA Specialist</p>
+          </header>
+
+          <blockquote>
+            <p>
+              An excellent platform for those looking to gain
+              up-to-date knowledge and land a real job. The program
+              is very well-structured, with a strong focus on
+              practical case studies and working with databases.
+              Mentors and coordinators are always available to help
+              tackle complex tasks and fully prepare you for the
+              realities of the job market.
+            </p>
+          </blockquote>
+        </article>
+
+        <article class="testimonial-card">
+          <header class="testimonial-card__header">
+            <h3>Mychailo Palanyk</h3>
+            <p>Full-stack Developer</p>
+          </header>
+
+          <blockquote>
+            <p>
+              Studying there was a fantastic career launchpad for me
+              as a Fullstack Developer. I particularly appreciated the
+              practical training format, the constant support from
+              mentors and coordinators, and the wide range of
+              real-world projects. Thanks to the knowledge I gained
+              and the interview preparation, I received my dream
+              job offer.
+            </p>
+          </blockquote>
+        </article>
+      </div>
+
+      <nav class="testimonials__pagination" aria-label="Testimonials pages">
+        <button type="button" aria-label="Testimonials page 1">
+          1
+        </button>
+
+        <button type="button" aria-label="Testimonials page 2">
+          2
+        </button>
+
+        <button type="button" aria-label="Testimonials page 3">
+          3
+        </button>
+      </nav>
+    </section>
+
+    <section
+      class="learning-cta"
+      aria-labelledby="learning-cta-title"
+    >
+      <h2 id="learning-cta-title">
+        Build practical IT skills with us
+      </h2>
+
+      <p>
+        Start learning for your future now!
+      </p>
+
+      <a href="courses.html">
+        Browse courses
+      </a>
+    </section>
+  </main>
+
+  <%- include("src/partials/footer.ejs") %>
 </body>
 </html>
